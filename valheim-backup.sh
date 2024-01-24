@@ -1,4 +1,4 @@
-uthor: crunchprank
+Author: crunchprank
 # version: 0.1
 # date: Mar 05 2021
 # 
