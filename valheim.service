@@ -1,5 +1,5 @@
 [Unit]
-Description=Valheim service
+Description=Valheim Server Service
 Wants=network.target
 After=syslog.target network-online.target
 
@@ -9,12 +9,12 @@ PIDFile=/run/valheim/valheim.pid
 EnvironmentFile=/etc/sysconfig/valheim
 Restart=on-failure
 RestartSec=10
-User=valheim
+User=janthony
 PermissionsStartOnly=true
-WorkingDirectory=/valheim/Game
+WorkingDirectory=/home/steam/steamapps/common/valheim/
 ExecStartPre=/usr/bin/mkdir -p /run/valheim
 ExecStartPre=/usr/bin/chown valheim:valheim /run/valheim
-ExecStart=/valheim/Game/start_valheim.sh
+ExecStart=/start_valheim.sh
 
 [Install]
 WantedBy=multi-user.target

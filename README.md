@@ -14,8 +14,8 @@ $ dnf install valheim-server
 $ vi /etc/sysconfig/valheim
 
 NAME="my-server"
-WORLD="valheim-rocks"
-PASSWORD="t0psecret"
+WORLD="hildir-rocks"
+PASSWORD="password"
 # Number of days to keep backups
 BACKUP_KEEP_DAYS="5"
 ```
